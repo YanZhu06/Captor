@@ -1,4 +1,5 @@
 Overview
+
 We developed an O-glycosylation predictor for Homo sapiens, named Captor, through multiple features. A random under-sampling method and a synthetic minority oversampling technique were employed to deal with imbalanced data. In addition, the Kruskal-Wallis test was adopted to optimize feature vectors and improve the performance of the model. A support vector machine, due to its optimal performance, was used to train and optimize the final prediction model after a comprehensive comparison of various classifiers in traditional machine learning methods and deep learning.
 
 1. Data
