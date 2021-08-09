@@ -9,7 +9,7 @@ a2='FYW';
 a3='KRH';
 a4='DE';
 a5='STCPNQ';
-L=length(positive{1,1});%Ã¿¸öµ°°×ÖÊÐòÁÐµÄ³¤¶È
+L=length(positive{1,1});
 for i=1:Np
     f=[];
     for j=1:L-4
@@ -55,7 +55,7 @@ for i=1:Np
         f5=h5/5;
         f(j,:)=[f1,f2,f3,f4,f5];
     end
-    B=f';%×ªÖÃÒ»ÏÂ
+    B=f';%è½¬ç½®ä¸€ä¸‹
     testpEGAAC(i,:)=(B(:))';
 end
 
@@ -105,6 +105,6 @@ for i=1:Nn
         f5=h5/5;
         f(j,:)=[f1,f2,f3,f4,f5];
     end
-    B=f';%×ªÖÃÒ»ÏÂ
+    B=f';%
     testnEGAAC(i,:)=(B(:))';
 end
