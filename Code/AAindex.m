@@ -31,7 +31,7 @@ for m=1:553
         for j=1:M
             t=positive{1,i}(j);
              if t=='U'
-                 continue  %在正样本序列中包含‘U’
+                 continue  %‘U’
              end
             k=strfind(AA,t);
             iindex1(i,m)=iindex1(i,m)+IndexMatrix(m,k);
@@ -45,7 +45,7 @@ for m=1:553
         for j=1:M
             t=negative{1,i}(j);
              if t=='U'
-                 continue  %在负样本序列中包含‘U’
+                 continue  %‘U’
              end
             k=strfind(AA,t); 
             iindex2(i,m)=iindex2(i,m)+IndexMatrix(m,k);
