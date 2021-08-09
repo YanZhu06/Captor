@@ -1,5 +1,5 @@
 function [iindex1,iindex2]=AAindex()
-filename='AAIDEX.xlsx';
+filename='AAINDEX.xlsx';
 X= xlsread(filename);
 IndexMatrix=zeros(553,21);
 
@@ -31,7 +31,7 @@ for m=1:553
         for j=1:M
             t=positive{1,i}(j);
              if t=='U'
-                 continue  %ÔÚÕıÑù±¾ĞòÁĞÖĞ°üº¬¡®U¡¯
+                 continue  %åœ¨æ­£æ ·æœ¬åºåˆ—ä¸­åŒ…å«â€˜Uâ€™
              end
             k=strfind(AA,t);
             iindex1(i,m)=iindex1(i,m)+IndexMatrix(m,k);
@@ -45,7 +45,7 @@ for m=1:553
         for j=1:M
             t=negative{1,i}(j);
              if t=='U'
-                 continue  %ÔÚ¸ºÑù±¾ĞòÁĞÖĞ°üº¬¡®U¡¯
+                 continue  %åœ¨è´Ÿæ ·æœ¬åºåˆ—ä¸­åŒ…å«â€˜Uâ€™
              end
             k=strfind(AA,t); 
             iindex2(i,m)=iindex2(i,m)+IndexMatrix(m,k);
