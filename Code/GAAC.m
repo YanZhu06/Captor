@@ -8,7 +8,7 @@ a2='FYW';
 a3='KRH';
 a4='DE';
 a5='STCPNQ';
-L=length(positive{1,1});%每个蛋白质序列的长度
+L=length(positive{1,1});
 
 GAACtestp=zeros(L,5);
 for i=1:Np
